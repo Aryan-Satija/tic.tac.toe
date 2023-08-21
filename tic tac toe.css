@@ -1,0 +1,105 @@
+:root{
+    --bg-light: #f6f8ff;
+    --bg-light-content: #fefefe;
+    --bg-dark: #141d2f;
+    --bg-dark-content: #2b3442;
+    --shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+.light{
+    background-color: var(--bg-light);
+}
+.light-sup{
+    background-color: var(--bg-light-content);
+}
+.dark{
+    background-color: var(--bg-dark);
+}
+.dark-sup{
+    background-color: var(--bg-dark-content);
+}
+.win{
+    background-color: rgba(100, 190, 110, 0.2);
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.inner-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+.title{
+    display: flex;
+    width: 250px;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: rgba(120, 120, 120, 1);
+}
+.mode{
+    cursor: pointer
+}
+.tic-tac-toe{
+    width: 250px;
+    aspect-ratio: 1/1;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    padding: 5px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.box{
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    color: rgba(120, 120, 120, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+.box:hover{
+    background-color: rgb(70, 95, 185, 0.5);  
+}
+.b{
+    border-bottom: 2px solid rgba(120, 120, 120, 0.5); 
+}
+.r{
+    border-right: 2px solid rgba(120, 120, 120, 0.5); 
+}
+.initGameBtn{
+    background-color: transparent;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    border: 2px solid rgba(120,120,120);
+    color: rgba(120, 120, 120);
+    font-weight: bold;
+    cursor: pointer;
+    transition: letter-spacing 0.5s;
+}
+.initGameBtn:hover{
+    letter-spacing: 1px;
+}
+.inactive{
+    opacity: 0;
+    pointer-events: none;
+}
+.active{
+    opacity: 1;
+    pointer-events: all;
+}

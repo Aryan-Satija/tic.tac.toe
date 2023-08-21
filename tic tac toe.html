@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="tic tac toe.css">
+</head>
+<body>
+    <div class="wrapper light">
+        <div class="inner-wrapper">
+            <div class="title">
+                <div>TIC TAC TOE</div>
+                <div class="mode"><i class="fa-solid fa-sun" onclick="switchMode()" mode-icon></i></div>
+            </div>
+            <div class="tic-tac-toe light-sup">
+                <div class="box r b"></div>
+                <div class="box r b"></div>
+                <div class="box b"></div>
+                <div class="box r b"></div>
+                <div class="box r b"></div>
+                <div class="box b"></div>
+                <div class="box r"></div>
+                <div class="box r"></div>
+                <div class="box"></div>
+            </div>
+            <div>
+                <button class="initGameBtn inactive" onclick="initGame()">NEW GAME</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+    <script src="tic tac toe.js"></script>
+</body>
+</html>
